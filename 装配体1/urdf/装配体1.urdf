@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="装配体1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-10.7220441045078 0.11665704079787 -24.9955161086606"
+        rpy="0 0 0" />
+      <mass
+        value="150.039252280828" />
+      <inertia
+        ixx="10.4086321483737"
+        ixy="0.00935758642565156"
+        ixz="1.31544395573418"
+        iyy="16.0798429501459"
+        iyz="-0.0247646052408279"
+        izz="7.2083766227846" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="smallwheel_link1">
+    <inertial>
+      <origin
+        xyz="-4.7018E-14 3.5527E-15 0.049819"
+        rpy="0 0 0" />
+      <mass
+        value="0.2636" />
+      <inertia
+        ixx="0.00017338"
+        ixy="-1.9058E-21"
+        ixz="-6.5535E-18"
+        iyy="0.00017338"
+        iyz="8.7956E-18"
+        izz="0.00027647" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smallwheel_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smallwheel_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="smallwheel_joint1"
+    type="continuous">
+    <origin
+      xyz="-11.036 24.711 0.03"
+      rpy="1.5708 -1.5464 -1.9153" />
+    <parent
+      link="base_link" />
+    <child
+      link="smallwheel_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="bigwheellink1">
+    <inertial>
+      <origin
+        xyz="2.6645E-15 3.5527E-15 -0.096169"
+        rpy="0 0 0" />
+      <mass
+        value="1.2691" />
+      <inertia
+        ixx="0.0027882"
+        ixy="-2.1684E-19"
+        ixz="-1.0105E-16"
+        iyy="0.0027882"
+        iyz="-6.4781E-17"
+        izz="0.0050263" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/bigwheellink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/bigwheellink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bigjoint1"
+    type="continuous">
+    <origin
+      xyz="-10.315 24.851 0.069"
+      rpy="-1.5708 1.2736 -1.9153" />
+    <parent
+      link="base_link" />
+    <child
+      link="bigwheellink1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="biglink2">
+    <inertial>
+      <origin
+        xyz="5.0127E-14 1.0658E-14 -0.083444"
+        rpy="0 0 0" />
+      <mass
+        value="1.2691" />
+      <inertia
+        ixx="0.0027882"
+        ixy="3.0493E-20"
+        ixz="-1.4211E-16"
+        iyy="0.0027882"
+        iyz="-1.7629E-16"
+        izz="0.0050263" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/biglink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/biglink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bigjoint2"
+    type="continuous">
+    <origin
+      xyz="-10.959 25.082 0.069"
+      rpy="1.5708 1.5464 1.2263" />
+    <parent
+      link="base_link" />
+    <child
+      link="biglink2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="smalllink2">
+    <inertial>
+      <origin
+        xyz="-4.87387907810444E-14 1.06581410364015E-14 0.0498185415541172"
+        rpy="0 0 0" />
+      <mass
+        value="0.263597216555037" />
+      <inertia
+        ixx="0.000173379311874297"
+        ixy="-8.470329472543E-22"
+        ixz="-6.55836435235323E-18"
+        iyy="0.000173379311874297"
+        iyz="8.79897825607767E-18"
+        izz="0.000276466032667254" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smalllink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smalllink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="smalljoint2"
+    type="continuous">
+    <origin
+      xyz="-10.807 25.333 0.03"
+      rpy="1.5708 -1.5464 -1.9153" />
+    <parent
+      link="base_link" />
+    <child
+      link="smalllink2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="smalllink3">
+    <inertial>
+      <origin
+        xyz="-7.1054E-14 4.2633E-14 0.060412"
+        rpy="0 0 0" />
+      <mass
+        value="0.2636" />
+      <inertia
+        ixx="0.00017338"
+        ixy="-2.0329E-20"
+        ixz="-9.7036E-18"
+        iyy="0.00017338"
+        iyz="2.7274E-18"
+        izz="0.00027647" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smalllink3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smalllink3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="smalljoint3"
+    type="continuous">
+    <origin
+      xyz="-10.338 25.164 0.03"
+      rpy="-1.5708 -0.9784 1.2263" />
+    <parent
+      link="base_link" />
+    <child
+      link="smalllink3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="smalllink4">
+    <inertial>
+      <origin
+        xyz="-4.70179450928754E-14 0 0.0498185415541172"
+        rpy="0 0 0" />
+      <mass
+        value="0.263597216555037" />
+      <inertia
+        ixx="0.000173379311874296"
+        ixy="-2.75285707857648E-21"
+        ixz="-6.55412918761696E-18"
+        iyy="0.000173379311874297"
+        iyz="8.80914265144472E-18"
+        izz="0.000276466032667254" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smalllink4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/smalllink4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="smalljoint4"
+    type="continuous">
+    <origin
+      xyz="-10.567 24.543 0.03"
+      rpy="1.5708 -1.5464 -1.9153" />
+    <parent
+      link="base_link" />
+    <child
+      link="smalllink4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="high_plate_link">
+    <inertial>
+      <origin
+        xyz="0.012568 0 0.32859"
+        rpy="0 0 0" />
+      <mass
+        value="289.6" />
+      <inertia
+        ixx="19.525"
+        ixy="2.1494E-13"
+        ixz="-0.54268"
+        iyy="20.162"
+        iyz="-1.9915E-13"
+        izz="21.768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/high_plate_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/high_plate_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="high_plate_joint"
+    type="fixed">
+    <origin
+      xyz="-10.722 24.997 0.27991"
+      rpy="0 0 -1.9153" />
+    <parent
+      link="base_link" />
+    <child
+      link="high_plate_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="basehandlink">
+    <inertial>
+      <origin
+        xyz="7.22550926823828E-06 0.0184349803798993 0.000475137947400839"
+        rpy="0 0 0" />
+      <mass
+        value="1.91435237083378" />
+      <inertia
+        ixx="0.00312084186108553"
+        ixy="2.20007764168415E-07"
+        ixz="-1.06039975779999E-07"
+        iyy="0.00574920092556231"
+        iyz="-5.5500607665919E-07"
+        izz="0.00309492928881999" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/basehandlink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://装配体1/meshes/basehandlink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="basehandjoint"
+    type="fixed">
+    <origin
+      xyz="0.36 0 1.4"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="high_plate_link" />
+    <child
+      link="basehandlink" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
